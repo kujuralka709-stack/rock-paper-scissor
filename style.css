@@ -1,0 +1,136 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.choice {
+    flex: 1;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 8px;
+    font-size: 15px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choice:hover {
+    background: #4c5fd5;
+    transform: translateY(-4px);
+}
+
+.result {
+    background: #f3f4f6;
+    padding: 18px 10px;
+    border-radius: 12px;
+    margin: 20px 0;
+    line-height: 2;
+    color: #333;
+}
+
+#result-message {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.score-box {
+    background: #eef0ff;
+    padding: 15px 8px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.score-box h3 {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.score-box p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+#reset-btn {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset-btn:hover {
+    background: #e84141;
+}
+
+footer {
+    color: #888;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .choice {
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+
+    .score-box h3 {
+        font-size: 11px;
+    }
+}
